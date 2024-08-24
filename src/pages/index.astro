@@ -1,12 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Portada from '../components/inicio/Portada.astro';
+import Destacadas from '../components/inicio/Destacadas.astro';
+import Datos from '../components/inicio/Datos.astro';
+import Nuevas from '../components/inicio/Nuevas.astro';
+import Comentarios from '../components/inicio/Comentarios.astro';
 ---
 
 <Layout title="MarSol Propiedades | Compra Venta Arriendo Inmobiliario">
 	<main>
-		<h1>Inicio</h1>
+		<Portada />
+		<Destacadas />
+		<Datos />
+		<Nuevas />
+		<Comentarios />
 	</main>
 </Layout>
 
-<style>
+<style is:global>
+:root{
+	--amarillo: #fec200
+	--gris: #404040
+}
 </style>

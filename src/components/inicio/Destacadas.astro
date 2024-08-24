@@ -1,0 +1,7 @@
+---
+import { destacadas } from "../../utils/Propiedades.ts"
+---
+<h2>Destacadas</h2>
+<ul>
+  {destacadas && destacadas.map((destacada) => <li class="skill">{destacada.title}</li>)}
+</ul>
