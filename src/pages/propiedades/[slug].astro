@@ -1,0 +1,18 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "../../layouts/Layout.astro";
+import { propiedades } from "../../utils/Propiedades";
+
+export const getStaticPaths = (() => {
+  return propiedades.map((propiedad) => ({
+    params: { slug: propiedad.slug },
+    props: { propiedad },
+  }))
+  ;
+}) satisfies GetStaticPaths;
+
+const propiedad = Astro.props
+---
+<Layout>
+  <h1>{propiedad.propiedad.title}</h1>
+</Layout>

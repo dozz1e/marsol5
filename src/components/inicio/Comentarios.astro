@@ -1,1 +1,38 @@
+---
+const comentarios = [
+  {
+    persona: "Janet F.",
+    ciudad: "Valparaíso",
+    texto:
+      "Excelente experiencia y apoyo en la gestión otorgada a Marsol propiedades me dan la confianza aun con la distancia de dejar todo en manos de la corredora para gestionar el arriendo o venta de mi departamento.",
+  },
+  {
+    persona: "Luis F.",
+    ciudad: "Valparaíso",
+    texto:
+      "Estoy muy agradecido y conforme con los servicios entregados por la Sra. Marlene. Me ayudó a ubicar y comprar el mejor departamento a disposición en ese momento. Sus orientaciones fueron de mucha ayuda y sus servicios en los procesos  de legalización de la compraventa, fueron impecables. Recomiendo a Marsol propiedades por su profesionalismo y el calor humano de su atención.",
+  },
+  {
+    persona: "Mario N.",
+    ciudad: "Viña del Mar",
+    texto:
+      "Mi experiencia con su agencia ha sido muy grata siempre dispuesta a solucionar problemas y con una agilidad muy buena al momento de solicitar algo, recomendable totalmente.",
+  },
+  {
+    persona: "Williams Z.",
+    ciudad: "Valparaíso",
+    texto:
+      "Por medio del presente testimonio, deseo recomendar a la empresa Marsol propiedades, con la cual he tenido una relación comercial por más de 3 años. Lo más importante para un propietario es encontrar a los arrendatarios adecuados y correctos, para mi en lo personal, cada vez que he arrendado mi propiedad a través de Marsol propiedades, ellos lo han encontrado. Por el tiempo que llevamos trabajando juntos, puedo asegurar que esta es una compania responsable y en  la cual puedo confiar. Por ello es de mi agrado recomendarles ampliamente sus servicios por su excelencia y rapidez en encontrar un buen arrendatario.",
+  },
+  {
+    persona: "Paula Muñoz",
+    ciudad: "Valparaíso",
+    texto:
+      "Una corredora de propiedades comprometida con su trabajo, siempre está atenta a las necesidades que podamos tener como arrendatarios, mantiene un canal de comunicación fluido con la arrendataria además de buscar siempre solución a las cosas que se puedan presentar. Recomiendo a Marsol Propiedades a ojos cerrados💜.",
+  },
+];
+---
 <h2>Comentarios</h2>
+<ul>
+  {comentarios && comentarios.map((comentario, i) => <li class="skill" key={i}>{comentario.persona}</li>)}
+</ul>

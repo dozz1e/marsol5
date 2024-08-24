@@ -1,0 +1,11 @@
+---
+import { propiedades } from "../../utils/Propiedades.ts"
+import Layout from "../../layouts/Layout.astro"
+---
+
+<Layout title="Listado de Propiedades">
+  <h1>Listado de Propiedades</h1>
+  <ul>
+    {propiedades && propiedades.map((pp,i) => <li class="skill" key={i}><a href={`/propiedades/${pp.slug}`}>{pp.title}</a></li>)}
+  </ul>
+</Layout>

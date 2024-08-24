@@ -3,5 +3,5 @@ import { destacadas } from "../../utils/Propiedades.ts"
 ---
 <h2>Destacadas</h2>
 <ul>
-  {destacadas && destacadas.map((destacada) => <li class="skill">{destacada.title}</li>)}
+  {destacadas && destacadas.map((destacada,i) => <li class="skill" key={i}><a href={`/propiedades/${destacada.slug}`}>{destacada.title}</a></li>)}
 </ul>

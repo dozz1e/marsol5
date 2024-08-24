@@ -3,5 +3,5 @@ import { nuevas } from "../../utils/Propiedades.ts"
 ---
 <h2>Nuevas</h2>
 <ul>
-  {nuevas && nuevas.map((nueva) => <li class="skill">{nueva.title}</li>)}
+  {nuevas && nuevas.map((nueva,i) => <li class="skill" key={i}><a href={`/propiedades/${nueva.slug}`}>{nueva.title}</a></li>)}
 </ul>
